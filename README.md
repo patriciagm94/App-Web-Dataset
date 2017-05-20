@@ -6,6 +6,7 @@
 - Sector al que va orientado
 - Miniguía "Consumiendo información de un dataset"
 - Mockup de la aplicación
+- Primer previo de página
 
 ----
 # Aplicación Propuesta .
@@ -29,8 +30,20 @@ Para utilizar esta herramienta solo basta con abrir el link de la página mencio
     {"id":       "928","firstname": "David J.","surname": "Thouless","motivation": "\"for theoretical discoveries of topological phase transitions and topological phases of matter\"","share": "2"}
     ]}
     ]}
+    
+Posteriormente hemos cambiado la herramienta utilizada a **Postman** [www.getpostman.com] en versión tanto de escritorio así como la extensión web disponible para el navegador Google Chrome.
 
 ---
 # Mockup de la aplicación:
 El programa utilizado para la realización del modelo de la aplicación web se llama **Proto IO**, es una herramienta de escritorio para prototipar aplicaciones web y/o móviles.
+Preview de la aplicación web final
+[mockup]: https://github.com/patriciagm94/App-Web-Dataset/blob/master/1.1-Screen%201.png
+
+
 El Dataset a utilizar es el siguiente: https://github.com/jdorfman/awesome-json-datasets#nobel-prize
+
+----
+# Primer previo de página en HTML.
+El archivo con extensión HTML se encuentra en este mismo repositorio, aquí sólo se muestra un previo de la página a la cual tendrá acceso el público al término del proyecto.
+
+[Preview](https://gyazo.com/fe84e4af27cbe837fa3aef22e078a69c)
