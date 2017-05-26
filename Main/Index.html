@@ -13,8 +13,22 @@
 	$.get(URL_BASE,function(data){
 		var datos= data.prizes;
 		console.log(datos);
-		document.getElementById('main').innerHTML = JSON.stringify(datos);
+		var a = datos;
+		document.getElementById('main').innerHTML = JSON.stringify(a);
 	});
+	var datos, dbParam, myObj, x, txt = "";
+	datos = { "table":"prizes"};
+	$.get(URL_BASE,function(data) {
+    if (this.readyState == 4 && this.status == 200) {
+        myObj = JSON.parse(this.responseText);
+        txt += "<table border='1'>"
+        for (x in myObj) {
+            txt += "<tr><td>" + myObj[x].firstname + "</td></tr>";
+        }
+        txt += "</table>"       
+        document.getElementById("main").innerHTML = txt.JSON.stringify(datos);
+    }
+});
 </script>
 <div class="container" id='main'>
 	<div class="jumbotron">
