@@ -14,21 +14,9 @@
 		var datos= data.prizes;
 		console.log(datos);
 		var a = datos;
-		document.getElementById('main').innerHTML = JSON.stringify(a);
+		document.getElementById('mainkhg').innerHTML = JSON.stringify(a);
 	});
-	var datos, dbParam, myObj, x, txt = "";
-	datos = { "table":"prizes"};
-	$.get(URL_BASE,function(data) {
-    if (this.readyState == 4 && this.status == 200) {
-        myObj = JSON.parse(this.responseText);
-        txt += "<table border='1'>"
-        for (x in myObj) {
-            txt += "<tr><td>" + myObj[x].firstname + "</td></tr>";
-        }
-        txt += "</table>"       
-        document.getElementById("main").innerHTML = txt.JSON.stringify(datos);
-    }
-});
+	
 </script>
 <div class="container" id='main'>
 	<div class="jumbotron">
@@ -47,13 +35,24 @@
     			<option>2010</option>
   			</select>
   		</div>
-  		<div class="col-xs-3">
+  		<div class="col-xs-2">
   		<label for="count">País</label>
   		<select class="form-control" id="count">
   			<option>USA</option>
   			<option>China</option>
   			<option>Russia</option>
   			<option>India</option>
+  		</select>
+  		</div>
+		<div class="col-xs-3">
+  		<label for="cat">Categoria</label>
+  		<select class="form-control" id="cat">
+  			<option>Fisica</option>
+  			<option>Literatura</option>
+  			<option>Paz</option>
+  			<option>Quimica</option>
+			<option>Economia</option>
+			<option>Medicina</option>
   		</select>
   		</div>
   	<div class="col-xs-4">		
