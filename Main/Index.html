@@ -13,14 +13,28 @@
 	$.get(URL_BASE,function(data){
 		var datos= data.prizes;
 		console.log(datos);
-		var a = datos;
-		document.getElementById('mainkhg').innerHTML = JSON.stringify(a);
+		var a = datos.map(b => b.year);
+		document.getElementById('main').innerHTML = JSON.stringify(a);
+		
+	});
+	$.get(URL_BASE,function(data){
+		var datos= data.prizes;
+		console.log(datos);
+		document.getElementById('main').innerHTML = JSON.stringify(datos);
+	});
+	$.get(URL_BASE,function(data){
+		var datos= data.prizes;
+		console.log(datos);
+		var a = datos.map(b => b.category);
+		document.getElementById('main').innerHTML = JSON.stringify(a);
 	});
 	
 </script>
+
 <div class="container" id='main'>
 	<div class="jumbotron">
   	<h1>Premio Nobel Buscador</h1>  
+	<img src="http://www.lavidacotidiana.es/wp-content/uploads/2013/05/Premio-nobel.jpg">
 	</div>
 	 <div class="form-group row">
 	 	<div class="col-xs-2">
